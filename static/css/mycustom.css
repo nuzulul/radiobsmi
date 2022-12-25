@@ -6,7 +6,7 @@
 
 
 .top {
-    width: 60%;
+    width: 90%;
     height: 12vh;
     margin: 0 auto;
     background: var(--body-background-color);
@@ -18,8 +18,9 @@
 .top img {
     position: fixed;
     top: calc((8vh - 1.776em) / 2);
-    width: 4.644em;
+    width: 3em;
     /*height: 1.776em;*/
+    left:20%;
 }
 
 .top nav {
@@ -37,4 +38,13 @@
 
 .top nav a:hover {
     border-bottom: 2px solid var(--primary-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .top {
+  }
+  .top img {
+    width:30px;
+    left:5%;
+  }
 }
