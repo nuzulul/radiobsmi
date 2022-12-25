@@ -647,8 +647,7 @@ body {
 					}
 					
 					function currentlyPlaying() {
-            currentSong = "Radio BSMI FM";
-            $( "#playerInfoPlaying" ).text(currentSong);
+            currentSong = "Radio BSMI FM";$( "#playerInfoPlaying" ).text(currentSong);return;
 						var songGetter = "./playing.php" + getTime();
 						$.ajax({
 							url: songGetter,
@@ -680,7 +679,7 @@ body {
 						}
 					}
 					
-					document.getElementById('playerAbout').title = "MagicD3VIL's Radio Player\nLicensed under the Academic Free License version 3.0\nCopyright (c) 2021 Michael Slíva <michael@sliva.dev>";
+					//document.getElementById('playerAbout').title = "MagicD3VIL's Radio Player\nLicensed under the Academic Free License version 3.0\nCopyright (c) 2021 Michael Slíva <michael@sliva.dev>";
 				</script>
 			<!-- END MagicD3VIL's Radio Player -->
 			
@@ -700,7 +699,7 @@ body {
    /*body { background: black !important; }  Adding !important forces the browser to overwrite the default style applied by Bootstrap */
 
 .center_home {
-    top: 20%;
+    top: 10%;
 }
 #MagicPlayer {
 
