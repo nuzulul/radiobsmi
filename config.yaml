@@ -62,8 +62,8 @@ menu:
         img: /img/logo1.png
       url: https://play.google.com/store/apps/details?id=app.netlify.bsmiradio
       weight: 3
-    - name: Radio
-      params:
-        img: /img/logo1.png
-      url: /
-      weight: 1
+#    - name: Radio
+#      params:
+#        img: /img/logo1.png
+#      url: /
+#      weight: 1
