@@ -1,0 +1,40 @@
+
+
+.top {
+    display: block;
+}
+
+
+.top {
+    width: 60%;
+    height: 8vh;
+    margin: 0 auto;
+    background: var(--body-background-color);
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+
+.top img {
+    position: fixed;
+    top: calc((8vh - 1.776em) / 2);
+    width: 4.644em;
+    /*height: 1.776em;*/
+}
+
+.top nav {
+    position: fixed;
+    top: calc((8vh - 1em) / 2);
+    color: var(--font-color);
+    right: 20%;
+}
+
+.top nav a {
+    padding: 0.5em 1em;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.top nav a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
