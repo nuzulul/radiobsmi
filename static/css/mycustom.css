@@ -7,7 +7,7 @@
 
 .top {
     width: 60%;
-    height: 8vh;
+    height: 12vh;
     margin: 0 auto;
     background: var(--body-background-color);
     position: sticky;
