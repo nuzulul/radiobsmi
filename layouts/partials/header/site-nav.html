@@ -1,3 +1,5 @@
+	
+
 <div class="stars">
   <div class="star"></div>
   <div class="star"></div>
@@ -440,7 +442,8 @@ body {
 </style>
 
 <center>
-
+<img src="img/logo-radio-bsmi-fm.png" width="80px">
+<h1>{{ .Title }}<img class="logolive" src="img/live.gif"></h1>
 
 
 		<link rel="preload" href="./css/style.css" as="style">
@@ -682,7 +685,7 @@ body {
 				</script>
 			<!-- END MagicD3VIL's Radio Player -->
 			
-<h1><img class="logolive" src="img/live.gif">{{ .Title }}</h1>			
+		
 			
 <div class="site-nav">
     {{ range .Site.Menus.navs }}
@@ -709,6 +712,7 @@ font-size:50px;
 .logolive
 {
 height:50px;
+margin-left:10px;
 }
 
 @media only screen and (max-width: 600px) {
