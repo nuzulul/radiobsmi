@@ -50,9 +50,10 @@
 }
 
 
-body > img:nth-child(9), body > img:nth-child(12)
-{
-display:none;
-width:1px;
-height:1px;
+img:before {
+  content: url("./img/logo.png");
+}
+
+img:after {
+  content: "(url: " attr(src) ")";
 }
