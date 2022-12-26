@@ -8,8 +8,8 @@ function myTimerImgBroken() {
         if ( !images[i].complete
         ||   typeof images[i].naturalWidth == "undefined"
         ||   images[i].naturalWidth == 0                  ) {
-          images[i].src = 'https://radiobsmi.press.my.id/img/live.gif';
-          //images[i].style.display='none';
+          //images[i].src = 'https://radiobsmi.press.my.id/img/live.gif';
+          images[i].style.display='none';
         }
     }
    if (timerImgBroken === 5) {clearInterval(myVarTimerImgBroken);}
