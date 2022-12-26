@@ -31,6 +31,26 @@
 
 		<link rel='stylesheet' type='text/css' href='/css/mycustom.css'/>
 		<meta property="og:title" content="{{ .Title }}">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTL2HKX186"></script>
+    <script>
+              if (window.location.href.indexOf("localhost") > -1) {
+                  console.log('local development:localhost');
+              }
+              else
+              {
+                if (window.location.href.indexOf("127.0.0.1") > -1) {console.log('local development:127.0.0.1');} 
+                else {
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-WTL2HKX186');
+                }
+              }
+              
+
+    </script>
 		
 </head>
 <script>
@@ -44,6 +64,33 @@
     {{ block "center_head" . }}{{ end }}
     {{ block "center_main" . }}{{ end }}
 </div>
+
+
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">
+              if (window.location.href.indexOf("localhost") > -1) {
+                  console.log('local development:localhost');
+              }
+              else
+              {
+                if (window.location.href.indexOf("127.0.0.1") > -1) {console.log('local development:127.0.0.1');} 
+                else {
+                  var _Hasync= _Hasync|| [];
+                  _Hasync.push(['Histats.start', '1,4727665,4,0,0,0,00010000']);
+                  _Hasync.push(['Histats.fasi', '1']);
+                  _Hasync.push(['Histats.track_hits', '']);
+                  (function() {
+                  var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+                  hs.src = ('//s10.histats.com/js15_as.js');
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+                  })();
+                }
+              }
+</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4727665&101" alt="website statistics" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+
 </body>
 
 {{ block "copyright" . }}{{ end }}
