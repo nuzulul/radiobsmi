@@ -647,12 +647,12 @@ body {
 					}
 					
 					function currentlyPlaying() {
-            currentSong = "Radio BSMI FM";$( "#playerInfoPlaying" ).text(currentSong);return;
-						var songGetter = "./playing.php" + getTime();
+            //currentSong = "Radio BSMI FM";$( "#playerInfoPlaying" ).text(currentSong);
+						var songGetter = "https://api.streamafrica.net/zeno/index.php?z=2x8c8cnq2zhvv"// + getTime();
 						$.ajax({
 							url: songGetter,
 							dataType: "text",
-							success: function(currentSong) {
+							success: function(currentSong) {var data=JSON.parse(currentSong);currentSong=data['currentSong']+' by '+data['currentArtist'];
 								currentSong = currentSong.replaceAll('&amp;', '&');
 								// sanitize the song name for XSS injection in case it's not properly sanitized by the API
 								currentSong = currentSong.replaceAll('<', '&lt;');
@@ -665,9 +665,8 @@ body {
 								currentSong = currentSong.replaceAll('\r', '<br>');
 								// sanitized
 								currentSong = currentSong.replaceAll('\t', '&nbsp;&nbsp;&nbsp;&nbsp;');
-								currentSong = "Radio BSMI FM";
+								//songToHistory(currentSong);
 								$( "#playerInfoPlaying" ).text(currentSong);
-								songToHistory(currentSong);
 							}
 						});
 					}
