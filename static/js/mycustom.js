@@ -8,7 +8,7 @@ function myTimerImgBroken() {
    })
    timerImgBroken++;
    console.log(timerImgBroken)
-   if (timerImgBroken === 5) {clearInterval(myVarTimerImgBroken);}
+   if (timerImgBroken === 10) {clearInterval(myVarTimerImgBroken);}
 }
 
 });
