@@ -49,11 +49,3 @@
   }
 }
 
-
-img:before {
-  content: url("./img/logo.png");
-}
-
-img:after {
-  content: "(url: " attr(src) ")";
-}
