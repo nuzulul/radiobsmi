@@ -32,7 +32,7 @@ params:
     h3: "✧ "
 menu:
   navs:
-    - name: Blog
+    - name: News
       params:
         img: /img/logo1.png
       url: /post/
