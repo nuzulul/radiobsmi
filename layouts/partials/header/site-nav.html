@@ -651,11 +651,16 @@ body {
 					
 					function currentlyPlaying() {
             //currentSong = "Radio BSMI FM";$( "#playerInfoPlaying" ).text(currentSong);
-						var songGetter = "https://api.streamafrica.net/zeno/index.php?z=2x8c8cnq2zhvv"// + getTime();
+						var songGetter = "https://app.nuzulul.repl.co/app/test/zenofm.php"// + getTime();
 						$.ajax({
 							url: songGetter,
 							dataType: "text",
-							success: function(currentSong) {var data=JSON.parse(currentSong);currentSong=data['currentSong']+' by '+data['currentArtist'];
+							success: function(currentSong) {
+							
+                //var data=JSON.parse(currentSong);currentSong=data['currentSong']+' by '+data['currentArtist']; // https://api.streamafrica.net/zeno/index.php?z=2x8c8cnq2zhvv
+                var currentSong = currentSong; // https://app.nuzulul.repl.co/app/test/icecastsongtitle.php
+                
+                
 								currentSong = currentSong.replaceAll('&amp;', '&');
 								// sanitize the song name for XSS injection in case it's not properly sanitized by the API
 								currentSong = currentSong.replaceAll('<', '&lt;');
