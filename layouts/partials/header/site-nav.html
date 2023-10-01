@@ -1,56 +1,7 @@
 
 
-<div class="stars">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
+<div class="backanim">
+  <center><div class="gradient"></div></center>
 </div>
 
 <style>
@@ -63,382 +14,56 @@ body {
   overflow: hidden;
 }
 
-.stars {
-  display:none;
+.backanim {
+  display:block;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120%;
-  transform: rotate(-45deg);
   z-index: -10;
+  border:0px solid #fff;
+  width:100vw;
+  left:0;
 }
 
-.star {
-  --star-color: var(--primary-color);
-  --star-tail-length: 6em;
-  --star-tail-height: 2px;
-  --star-width: calc(var(--star-tail-length) / 6);
-  --fall-duration: 9s;
-  --tail-fade-duration: var(--fall-duration);
-  position: absolute;
-  top: var(--top-offset);
-  left: 0;
-  width: var(--star-tail-length);
-  height: var(--star-tail-height);
-  color: var(--star-color);
-  background: linear-gradient(45deg, currentColor, transparent);
-  border-radius: 50%;
-  filter: drop-shadow(0 0 6px currentColor);
-  transform: translate3d(104em, 0, 0);
-  animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
-}
-@media screen and (max-width: 750px) {
-  .star {
-    animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
-  }
-}
-.star:nth-child(1) {
-  --star-tail-length: 6.66em;
-  --top-offset: 3.77vh;
-  --fall-duration: 6.916s;
-  --fall-delay: 0.76s;
-}
-.star:nth-child(2) {
-  --star-tail-length: 6.02em;
-  --top-offset: 65.6vh;
-  --fall-duration: 7.396s;
-  --fall-delay: 0.395s;
-}
-.star:nth-child(3) {
-  --star-tail-length: 5.56em;
-  --top-offset: 76.53vh;
-  --fall-duration: 8.219s;
-  --fall-delay: 6.755s;
-}
-.star:nth-child(4) {
-  --star-tail-length: 5.25em;
-  --top-offset: 7.85vh;
-  --fall-duration: 6.088s;
-  --fall-delay: 2.449s;
-}
-.star:nth-child(5) {
-  --star-tail-length: 6.38em;
-  --top-offset: 5.62vh;
-  --fall-duration: 6.466s;
-  --fall-delay: 3.706s;
-}
-.star:nth-child(6) {
-  --star-tail-length: 5.49em;
-  --top-offset: 94.94vh;
-  --fall-duration: 8.193s;
-  --fall-delay: 8.658s;
-}
-.star:nth-child(7) {
-  --star-tail-length: 5.89em;
-  --top-offset: 73.96vh;
-  --fall-duration: 7.505s;
-  --fall-delay: 9.023s;
-}
-.star:nth-child(8) {
-  --star-tail-length: 7.13em;
-  --top-offset: 83.55vh;
-  --fall-duration: 9.928s;
-  --fall-delay: 5.934s;
-}
-.star:nth-child(9) {
-  --star-tail-length: 5.13em;
-  --top-offset: 15.9vh;
-  --fall-duration: 10.414s;
-  --fall-delay: 6.146s;
-}
-.star:nth-child(10) {
-  --star-tail-length: 6.21em;
-  --top-offset: 40.46vh;
-  --fall-duration: 6.16s;
-  --fall-delay: 1.182s;
-}
-.star:nth-child(11) {
-  --star-tail-length: 7.12em;
-  --top-offset: 71.19vh;
-  --fall-duration: 7.202s;
-  --fall-delay: 3.467s;
-}
-.star:nth-child(12) {
-  --star-tail-length: 7.15em;
-  --top-offset: 16.12vh;
-  --fall-duration: 9.441s;
-  --fall-delay: 6.811s;
-}
-.star:nth-child(13) {
-  --star-tail-length: 7.36em;
-  --top-offset: 1.59vh;
-  --fall-duration: 7.471s;
-  --fall-delay: 9.891s;
-}
-.star:nth-child(14) {
-  --star-tail-length: 5.51em;
-  --top-offset: 25.05vh;
-  --fall-duration: 11.659s;
-  --fall-delay: 8.875s;
-}
-.star:nth-child(15) {
-  --star-tail-length: 6.83em;
-  --top-offset: 46.06vh;
-  --fall-duration: 6.505s;
-  --fall-delay: 8.112s;
-}
-.star:nth-child(16) {
-  --star-tail-length: 6.26em;
-  --top-offset: 61.2vh;
-  --fall-duration: 9.492s;
-  --fall-delay: 0.694s;
-}
-.star:nth-child(17) {
-  --star-tail-length: 6.8em;
-  --top-offset: 22.26vh;
-  --fall-duration: 6.429s;
-  --fall-delay: 2.867s;
-}
-.star:nth-child(18) {
-  --star-tail-length: 6.31em;
-  --top-offset: 15.73vh;
-  --fall-duration: 6.141s;
-  --fall-delay: 3.534s;
-}
-.star:nth-child(19) {
-  --star-tail-length: 5.84em;
-  --top-offset: 71.19vh;
-  --fall-duration: 9.177s;
-  --fall-delay: 2.325s;
-}
-.star:nth-child(20) {
-  --star-tail-length: 7.5em;
-  --top-offset: 96.09vh;
-  --fall-duration: 8.191s;
-  --fall-delay: 4.795s;
-}
-.star:nth-child(21) {
-  --star-tail-length: 5em;
-  --top-offset: 43.49vh;
-  --fall-duration: 11.989s;
-  --fall-delay: 3.1s;
-}
-.star:nth-child(22) {
-  --star-tail-length: 5.19em;
-  --top-offset: 84.4vh;
-  --fall-duration: 10.707s;
-  --fall-delay: 8.976s;
-}
-.star:nth-child(23) {
-  --star-tail-length: 6.57em;
-  --top-offset: 77.71vh;
-  --fall-duration: 11.667s;
-  --fall-delay: 2.428s;
-}
-.star:nth-child(24) {
-  --star-tail-length: 6.83em;
-  --top-offset: 43.04vh;
-  --fall-duration: 9.721s;
-  --fall-delay: 3.973s;
-}
-.star:nth-child(25) {
-  --star-tail-length: 6.21em;
-  --top-offset: 16.77vh;
-  --fall-duration: 11.717s;
-  --fall-delay: 1.313s;
-}
-.star:nth-child(26) {
-  --star-tail-length: 7.4em;
-  --top-offset: 12.6vh;
-  --fall-duration: 8.66s;
-  --fall-delay: 9.944s;
-}
-.star:nth-child(27) {
-  --star-tail-length: 6.59em;
-  --top-offset: 96.4vh;
-  --fall-duration: 10.57s;
-  --fall-delay: 5.588s;
-}
-.star:nth-child(28) {
-  --star-tail-length: 6.57em;
-  --top-offset: 24.2vh;
-  --fall-duration: 8.584s;
-  --fall-delay: 4.876s;
-}
-.star:nth-child(29) {
-  --star-tail-length: 6.91em;
-  --top-offset: 98.35vh;
-  --fall-duration: 7.029s;
-  --fall-delay: 3.402s;
-}
-.star:nth-child(30) {
-  --star-tail-length: 6.19em;
-  --top-offset: 76.19vh;
-  --fall-duration: 8.432s;
-  --fall-delay: 6.658s;
-}
-.star:nth-child(31) {
-  --star-tail-length: 5.56em;
-  --top-offset: 7.91vh;
-  --fall-duration: 10.539s;
-  --fall-delay: 9.115s;
-}
-.star:nth-child(32) {
-  --star-tail-length: 7.35em;
-  --top-offset: 94.15vh;
-  --fall-duration: 9.06s;
-  --fall-delay: 7.269s;
-}
-.star:nth-child(33) {
-  --star-tail-length: 5.38em;
-  --top-offset: 18.3vh;
-  --fall-duration: 7.986s;
-  --fall-delay: 0.352s;
-}
-.star:nth-child(34) {
-  --star-tail-length: 7.38em;
-  --top-offset: 75.26vh;
-  --fall-duration: 6.923s;
-  --fall-delay: 6.02s;
-}
-.star:nth-child(35) {
-  --star-tail-length: 7.28em;
-  --top-offset: 11.34vh;
-  --fall-duration: 9.627s;
-  --fall-delay: 9.296s;
-}
-.star:nth-child(36) {
-  --star-tail-length: 5.2em;
-  --top-offset: 68.6vh;
-  --fall-duration: 10.255s;
-  --fall-delay: 9.934s;
-}
-.star:nth-child(37) {
-  --star-tail-length: 6.39em;
-  --top-offset: 98.03vh;
-  --fall-duration: 7.874s;
-  --fall-delay: 4.749s;
-}
-.star:nth-child(38) {
-  --star-tail-length: 5.24em;
-  --top-offset: 18.46vh;
-  --fall-duration: 6.1s;
-  --fall-delay: 3.474s;
-}
-.star:nth-child(39) {
-  --star-tail-length: 7.22em;
-  --top-offset: 73.17vh;
-  --fall-duration: 8.62s;
-  --fall-delay: 6.832s;
-}
-.star:nth-child(40) {
-  --star-tail-length: 5.28em;
-  --top-offset: 67.13vh;
-  --fall-duration: 7.023s;
-  --fall-delay: 5.88s;
-}
-.star:nth-child(41) {
-  --star-tail-length: 5.6em;
-  --top-offset: 75.39vh;
-  --fall-duration: 7.522s;
-  --fall-delay: 8.336s;
-}
-.star:nth-child(42) {
-  --star-tail-length: 5.22em;
-  --top-offset: 65.29vh;
-  --fall-duration: 11.225s;
-  --fall-delay: 7.331s;
-}
-.star:nth-child(43) {
-  --star-tail-length: 7.47em;
-  --top-offset: 9.61vh;
-  --fall-duration: 9.557s;
-  --fall-delay: 7.964s;
-}
-.star:nth-child(44) {
-  --star-tail-length: 7.41em;
-  --top-offset: 58.67vh;
-  --fall-duration: 8.416s;
-  --fall-delay: 6.211s;
-}
-.star:nth-child(45) {
-  --star-tail-length: 6.52em;
-  --top-offset: 30.84vh;
-  --fall-duration: 9.3s;
-  --fall-delay: 1.75s;
-}
-.star:nth-child(46) {
-  --star-tail-length: 7.3em;
-  --top-offset: 89.3vh;
-  --fall-duration: 10.523s;
-  --fall-delay: 8.841s;
-}
-.star:nth-child(47) {
-  --star-tail-length: 6.56em;
-  --top-offset: 31.48vh;
-  --fall-duration: 8.642s;
-  --fall-delay: 5.503s;
-}
-.star:nth-child(48) {
-  --star-tail-length: 5.15em;
-  --top-offset: 48.66vh;
-  --fall-duration: 8.982s;
-  --fall-delay: 0.981s;
-}
-.star:nth-child(49) {
-  --star-tail-length: 5.38em;
-  --top-offset: 16.84vh;
-  --fall-duration: 9.861s;
-  --fall-delay: 1.447s;
-}
-.star:nth-child(50) {
-  --star-tail-length: 6.49em;
-  --top-offset: 91.74vh;
-  --fall-duration: 11.235s;
-  --fall-delay: 6.491s;
-}
-.star::before, .star::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: calc(var(--star-width) / -2);
-  width: var(--star-width);
-  height: 100%;
-  background: linear-gradient(45deg, transparent, currentColor, transparent);
-  border-radius: inherit;
-  animation: blink 2s linear infinite;
-}
-.star::before {
-  transform: rotate(45deg);
-}
-.star::after {
-  transform: rotate(-45deg);
-}
 
-@keyframes fall {
-  to {
-    transform: translate3d(-30em, 0, 0);
-  }
-}
-@keyframes tail-fade {
-  0%, 50% {
-    width: var(--star-tail-length);
-    opacity: 1;
-  }
-  70%, 80% {
-    width: 0;
-    opacity: 0.4;
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
   100% {
-    width: 0;
-    opacity: 0;
+    transform: rotate(360deg);
   }
 }
-@keyframes blink {
-  50% {
-    opacity: 0.6;
+.gradient {
+  --size: 250px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(rgba(55, 235, 169, 0.85), #5b37eb);
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;  
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 300px;
   }
+}
+body {
+  background-color: #222;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* This is just to transition when you change the viewport size. */
+* {
+  transition: all 0.25s ease-out;
 }
 </style>
 
